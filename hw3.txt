@@ -1,0 +1,22 @@
+(2)
+a. %rdx = 8048a37
+b. %rdx = 0x08048a6b
+c. %rdx = 0xec833b75c08510c4
+d. %rdx = 0x04a884a3fffffe73
+e. %rdx = 0x833b7502f883f689
+f. %rdx = 8048a37
+g. %rdx = 136be7ad
+h. %rdx = dc5b2ea
+i. %rdx = 3a2df8a7 
+j. %rdx = 8048c92
+
+
+(3)
+   movq    %rdi, %rax  # move x
+   addq    %rsi, %rax  # if true: x+y
+   movq    %rdi, %rdx  # move x
+   subq    %rsi, %rdx  # else: x-y
+   salq    $1, %rdx    # left shift 1, to do *2
+   cmpq    %rsi, %rdi  # x:y
+   cmovle  %rdx, %rax  # if <=, result = eval
+   ret

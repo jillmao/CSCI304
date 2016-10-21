@@ -1,0 +1,24 @@
+(1) Suppose num1 and num2 are unsigned numbers (more precisely, unsigned char), what are they in decimal representation? 
+    num1 = 237
+    num2 = 128
+
+(2) Suppose they are signed numbers (more precisely, signed char) in two's complement representation, what are they in decimal representation?
+    num1 = -19
+    num2 = -128
+    
+(3) Suppose an integer is represented in 4 bytes. Write the two's complement representation for number 157 and -157 in hexadecimal form.
+    157 = 0x0000009b
+    -157 = 0xffffff63
+
+(4) Convert 10001001 in binary to decimal (under the unsigned number representation) and hexadecimal.
+    decimal: 137
+    hexadecimal: 0x89
+
+(5) Convert 35 in decimal to binary and hexadecimal.
+    binary: 00100011
+    hexadecimal:0x23
+
+(6) Again we use 8-bit numbers. Calculate (-122)+(-111), 111+122, and 111-122 by using two's complement representations and addition in binary. Indicate whether overflow occurs.  
+    (-122)+(-111): overflow occurs
+    111+122: overflow does not occur
+    111-122: overflow does not occur

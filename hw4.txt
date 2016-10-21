@@ -1,0 +1,66 @@
+(1)
+int fun3(int a, int b)
+{
+    if (b < a)
+        return b;
+    else
+        return a;
+}
+
+
+(2)
+int fun6(int a)
+{
+    return a * 28;
+}
+
+
+(3)
+int loop(int x, int y)
+{
+  int i;
+  int r = 1;
+ 
+    for (i=x; i>y; i--) {
+         r += i;
+   }
+
+   return r;
+
+}
+
+(4)
+fun7 corresponds to choice4
+
+fun8 corresponds to choice5 
+
+fun9 corresponds to choice1
+
+
+(5)
+void shift(int *a, int n) {
+    int i;
+    for(i = 0; i != n-1; i++)
+        *(a+i) = *(a+(i+1));
+      }
+
+      
+(6)
+  blocks = 0x4680
+  ptr = 0x4680
+  temp = 0
+
+  temp = A
+  temp = P
+  temp = E
+  temp = A
+
+  ptr = 4682
+  temp = P
+  temp = E
+
+  ptr = 4680
+  ptr = 4681, temp = E
+  ptr = 4681, temp = F
+  ptr = 4682, temp = E
+  temp = 4682

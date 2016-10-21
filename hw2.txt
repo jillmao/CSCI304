@@ -1,0 +1,55 @@
+(1) 11101010110101010000000000000000
+(2a) 0x00000000 = 0
+(2b) 0xBF800000 = -1
+(2c) 0x44802000 = 1025
+
+(3)
+int main(){
+int i, j, *p, *q;
+
+// The following line means i=5; j=i;
+//j = 5;
+j=(i=5);
+
+// The following line means the logical value of i==4 will be assigned to j. That is, if i is equal to 4, then j=1; otherwise j=0;
+// The following line means that i=5; j=0;
+j=(i==4);
+
+// The following line means i=6; j=6;
+j=++i;
+
+// The following line means i=5; j=6;
+j=i--;
+
+// The following line means i=5; j=6;
+p=&i;
+
+// The following line means i=5; j=6;
+q=&j;
+
+// The following line means i=3; j=6;
+*p=3;
+
+// The following line means i=3; j=4;
+*q=*p+1;
+
+// The following line means i=8; j=4;
+i=8;
+
+// The following line means i=8; j=9;
+j=9;
+
+// The following line means i=9; j=9;
+(*p)++;
+
+// The following line means i=9; j=10;
+(*q)++;
+
+// The following line means i=9; j=10;
+q=p;
+
+// The following line means i=8; j=10;
+(*q)--;
+
+return 0;
+}
